@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+html{
+    font-family: "Arial", "Verdana", sans-serif;
+}
+
+body {
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+main{
+    padding-top: 20px;
+}
+
+h1, h2, p{
+    line-height: 1.6;
+}
+
+p{
+    max-width: 900px;
+}
+
+h2{
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+
+nav, footer, header, #submit{
+    font-weight: bold;
+}
+
+header nav{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(134, 138, 62);
+    clear: both;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header nav ul li{
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover, nav a:focus, nav a:active, .active, form #submit:hover, button:hover {
+    background-color: rgb(217,189,134);
+    transition: background-color 1s;
+}
+
+nav a{
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+}
+
+table td a, strong, a{
+    text-decoration: none;
+    color: rgb(135, 69, 91);
+}
+
+table a:hover, a:hover{
+    background-color: rgb(135, 69, 91);
+    color: rgb(255,255,254);
+}
+
+header{
+    background-image: url("../img/anemos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+
+h1 {
+    font-size: 2em;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30%;
+    background-image: linear-gradient(rgba(216, 188, 133, 0.4), rgba(216, 188, 133, 0.4));
+}
+
+footer, h1, h2, p{
+    padding: 20px;
+}
+
+button{
+    margin: 50px;
+
+}
+
+#table{
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+th, td{
+    text-align: left;
+    padding: 10px;
+}
+
+tr{
+    line-height: 1.5em;
+}
+
+tr:nth-child(even){
+    background-color: rgba(136, 232, 255, 0.14);
+}
+
+footer{
+    background-color: rgb(136,140,62);
+    text-align: center;
+}
+
+form p, #submit{
+    margin-bottom: 1em;
+}
+
+form p:first-child{
+    margin-top: 1em;
+}
+
+form label{
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+form input ,select{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 2em;
+    border: 1px solid #AAA;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    resize: vertical;
+}
+
+form select{
+    width: auto;
+    height: 2.5rem;
+}
+
+form input, select {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+}
+
+form #submit{
+    width: 14ch;
+    float: right;
+}
+
+
+form input:invalid{
+    border-color: rgb(135, 69, 91);
+}
+
+form{
+    max-width: 500px;
+}
+
+@media only screen and (min-width: 610px) {
+    header nav ul{
+        flex-direction: row;
+    }
+}
